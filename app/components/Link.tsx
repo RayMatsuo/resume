@@ -15,10 +15,10 @@ export default function Link({
   className = ""
 }: Props) {
 
-  className += "text-blue-400 hover:underline cursor-pointer";
+  const additionalClasses: string = process.env.IS_HTML ? "text-blue-400 hover:underline cursor-pointer" : ""
 
   return (
-    <a className={className} target={target} href={href}>
+    <a className={`${className} ${additionalClasses} `} target={target} href={href}>
       {children}
     </a>
   )
