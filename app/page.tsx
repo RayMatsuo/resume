@@ -7,8 +7,8 @@ import SideItem from "./components/Side/Item";
 
 export default function Home() {
   return (
-    <div className="flex flex-row justify-center items-center w-full pt-4 ">
-      <main className="aspect-210/297 w-full  max-w-187.5">
+    <div className="flex flex-row justify-center items-center w-full pt-4 pb-4 ">
+      <main className="aspect-210/297 w-full  max-w-187.5 outline">
         <header className="w-full p-8 bg-black ">
           <h1 className="text-3xl text-white text-center">
             Ray Matsuo
